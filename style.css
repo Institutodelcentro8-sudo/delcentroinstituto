@@ -250,4 +250,38 @@ section h2 {
 
 .card-inicio h3{
     color:#003366;
+} 
+@media (max-width: 768px) {
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 240px;
+    height: 100vh;
+    transition: right 0.3s ease;
+    z-index: 999;
+  }
+
+  nav.abierto {
+    right: 0;
+  }
+
+  .menu-btn {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: #003366;
+    color: white;
+    border: none;
+    font-size: 28px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    z-index: 1000;
+  }
+}
+
+.menu-btn {
+  display: none;
 }
