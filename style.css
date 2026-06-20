@@ -302,3 +302,43 @@ section h2 {
         font-size: 18px;
     }
 }
+/* =========================
+   AJUSTE ESCRITORIO
+========================= */
+
+@media (min-width: 769px) {
+
+    main {
+        margin-right: 260px;
+        padding: 40px;
+    }
+
+    section {
+        max-width: 900px;
+        margin: 0 auto 40px auto;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    section p {
+        max-width: 750px;
+        margin: 15px auto;
+        font-size: 17px;
+    }
+
+    section ul {
+        display: inline-block;
+        text-align: left;
+        margin: 15px auto;
+        padding-left: 25px;
+    }
+
+    section li {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    header img {
+        width: 170px;
+    }
+}
