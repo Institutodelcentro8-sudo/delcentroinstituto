@@ -215,17 +215,6 @@ section h2 {
 .btn-verde {
     background: #25D366;
 }
-
-.campus-box {
-    text-align: center;
-    border: 1px solid #bfe8cd;
-    background: #f0fff5;
-}
-
-.campus-box h2 {
-    color: #008040;
-}
-
 .cards-inicio {
     display: flex;
     gap: 20px;
