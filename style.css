@@ -76,9 +76,9 @@ section h3 {
 
 section p {
     max-width: 650px;
-    margin: 16px auto;
+    margin: 16px auto; /* agregar espacio inferior */
     font-size: 18px;
-    line-height: 1.7;
+    line-height: 1.8; /* mejora la lectura */
 }
 
 /* =========================
