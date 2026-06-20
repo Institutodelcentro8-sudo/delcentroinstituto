@@ -2,12 +2,91 @@
    ESTILO GENERAL
 ========================= */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #0a1e3f 0%, #f0f0f0 50%, #0a1e3f 100%);
     color: #222;
-    display: flex;
+}
+
+/* =========================
+   CONTENIDO
+========================= */
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    margin-right: 260px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header img {
+    width: 170px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+header h1 {
+    color: #003366;
+    font-size: 34px;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+
+section {
+    background: white;
+    padding: 45px;
+    border-radius: 14px;
+    box-shadow: 0 0 12px rgba(0,0,0,.12);
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+section h2 {
+    color: #003366;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+section h3 {
+    color: #003366;
+    font-size: 23px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+section p {
+    max-width: 650px;
+    margin: 16px auto;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+section ul {
+    display: inline-block;
+    text-align: left;
+    max-width: 550px;
+    margin: 15px auto;
+    padding-left: 25px;
+}
+
+section li {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 8px;
 }
 
 /* =========================
@@ -17,12 +96,12 @@ body {
 nav {
     background: #003366;
     color: white;
-    width: 220px;
+    width: 240px;
     min-height: 100vh;
     position: fixed;
     right: 0;
     top: 0;
-    padding: 20px;
+    padding: 25px 20px;
     box-shadow: -2px 0 10px rgba(0,0,0,.2);
 }
 
@@ -35,7 +114,7 @@ nav a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 11px;
     margin: 8px 0;
     border-radius: 6px;
     font-weight: bold;
@@ -52,49 +131,6 @@ nav a:hover {
 
 .menu-btn {
     display: none;
-}
-
-/* =========================
-   CONTENIDO
-========================= */
-
-main {
-    flex: 1;
-    padding: 40px;
-    margin-right: 220px;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-header img {
-    width: 200px;
-    display: block;
-    margin: auto;
-}
-
-header h1 {
-    color: #003366;
-}
-
-/* =========================
-   SECCIONES
-========================= */
-
-section {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
-    margin-bottom: 40px;
-    text-align: center; /* centra todo el contenido */
-}
-
-section h2 {
-    color: #003366;
-    margin-bottom: 20px;
 }
 
 /* =========================
@@ -121,7 +157,6 @@ section h2 {
     background: #25D366;
 }
 
-/* Efecto hover moderno */
 .btn-verde:hover {
     background: #128C7E;
     transform: scale(1.05);
@@ -254,40 +289,52 @@ section h2 {
 
 @media (max-width: 768px) {
 
-    body {
-        display: block;
+    main {
+        max-width: 100%;
+        margin: 0;
+        padding: 20px;
     }
 
-    .menu-btn {
-        display: block;
-        position: fixed;
-        top: 15px;
-        right: 15px;
-        background: #003366;
-        color: white;
-        border: none;
+    header img {
+        width: 120px;
+    }
+
+    header h1 {
         font-size: 28px;
-        padding: 8px 12px;
-        border-radius: 6px;
-        z-index: 9999;
+    }
+
+    section {
+        padding: 25px 18px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    section h3 {
+        font-size: 21px;
+    }
+
+    section p {
+        font-size: 17px;
+    }
+
+    section ul {
+        max-width: 100%;
     }
 
     nav {
-        right: -300px;
-        width: 260px;
-        height: 100vh;
-        transition: right .3s;
-        z-index: 9998;
-    }
-
-    nav.abierto {
-        right: 0;
-    }
-
-    main {
-        margin-right: 0;
-        width: auto;
+        position: static;
+        width: 100%;
+        min-height: auto;
+        text-align: center;
         padding: 20px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+        font-size: 14px;
     }
 
     .whatsapp {
@@ -296,49 +343,13 @@ section h2 {
         padding: 12px 16px;
     }
 
-    /* Botón centrado y adaptado en móvil */
     .btn-verde {
         width: 80%;
         font-size: 18px;
     }
-}
-/* =========================
-   AJUSTE ESCRITORIO
-========================= */
 
-@media (min-width: 769px) {
-
-    main {
-        margin-right: 260px;
-        padding: 40px;
-    }
-
-    section {
-        max-width: 900px;
-        margin: 0 auto 40px auto;
-        text-align: center;
-        line-height: 1.6;
-    }
-
-    section p {
-        max-width: 750px;
-        margin: 15px auto;
-        font-size: 17px;
-    }
-
-    section ul {
-        display: inline-block;
-        text-align: left;
-        margin: 15px auto;
-        padding-left: 25px;
-    }
-
-    section li {
-        margin-bottom: 8px;
-        font-size: 16px;
-    }
-
-    header img {
-        width: 170px;
+    .portada img {
+        width: 100%;
+        height: auto;
     }
 }
