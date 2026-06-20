@@ -41,6 +41,12 @@ header h1 {
     font-size: 34px;
 }
 
+/* Espaciado entre párrafos */
+section p {
+    margin-bottom: 15px;   /* separa cada párrafo */
+    line-height: 1.7;      /* mejora la lectura */
+}
+
 /* =========================
    SECCIONES
 ========================= */
@@ -73,20 +79,6 @@ section p {
     margin: 16px auto;
     font-size: 18px;
     line-height: 1.7;
-}
-
-section ul {
-    display: inline-block;
-    text-align: left;
-    max-width: 550px;
-    margin: 15px auto;
-    padding-left: 25px;
-}
-
-section li {
-    font-size: 17px;
-    line-height: 1.6;
-    margin-bottom: 8px;
 }
 
 /* =========================
