@@ -323,18 +323,41 @@ nav a:hover {
         max-width: 100%;
     }
 
+    .menu-btn {
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        background: #003366;
+        color: white;
+        border: none;
+        font-size: 28px;
+        padding: 8px 12px;
+        border-radius: 6px;
+        z-index: 9999;
+    }
+
     nav {
-        position: static;
-        width: 100%;
-        min-height: auto;
-        text-align: center;
-        padding: 20px;
+        position: fixed;
+        right: -300px;
+        top: 0;
+        width: 260px;
+        height: 100vh;
+        min-height: 100vh;
+        transition: right .3s;
+        z-index: 9998;
+        text-align: left;
+        padding: 25px 20px;
+    }
+
+    nav.abierto {
+        right: 0;
     }
 
     nav a {
-        display: inline-block;
-        margin: 6px;
-        font-size: 14px;
+        display: block;
+        margin: 8px 0;
+        font-size: 16px;
     }
 
     .whatsapp {
