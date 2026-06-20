@@ -7,8 +7,9 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+<main>    
+    
 <header class="inicio-header">
     <img src="logo.jpg.jpeg" alt="Logo del Instituto del Centro">
     <h1>Instituto del Centro</h1>
@@ -69,6 +70,12 @@
 <a href="https://wa.me/5492284637002" class="whatsapp" target="_blank">
     WhatsApp
 </a>
-
+    
+<script>
+function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('abierto');
+}
+</script>
 </body>
 </html>
