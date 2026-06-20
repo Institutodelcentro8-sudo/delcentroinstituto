@@ -89,11 +89,42 @@ section {
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
     margin-bottom: 40px;
+    text-align: center; /* centra todo el contenido */
 }
 
 section h2 {
     color: #003366;
     margin-bottom: 20px;
+}
+
+/* =========================
+   BOTONES GENERALES
+========================= */
+
+.btn-azul,
+.btn-verde {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 15px auto;
+    transition: .3s;
+}
+
+.btn-azul {
+    background: #003366;
+}
+
+.btn-verde {
+    background: #25D366;
+}
+
+/* Efecto hover moderno */
+.btn-verde:hover {
+    background: #128C7E;
+    transform: scale(1.05);
 }
 
 /* =========================
@@ -197,24 +228,6 @@ section h2 {
     text-align: center;
 }
 
-.btn-azul,
-.btn-verde {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    padding: 12px 22px;
-    border-radius: 8px;
-    font-weight: bold;
-    margin: 6px;
-}
-
-.btn-azul {
-    background: #003366;
-}
-
-.btn-verde {
-    background: #25D366;
-}
 .cards-inicio {
     display: flex;
     gap: 20px;
@@ -281,5 +294,11 @@ section h2 {
         bottom: 15px;
         left: 15px;
         padding: 12px 16px;
+    }
+
+    /* Botón centrado y adaptado en móvil */
+    .btn-verde {
+        width: 80%;
+        font-size: 18px;
     }
 }
