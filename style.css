@@ -375,3 +375,29 @@ nav.abierto .cerrar-menu {
   text-align: center;
   margin-top: 40px;
 }
+/* =========================
+   CUADROS UNIFICADOS CON FRANJA AZUL
+========================= */
+
+main section,
+.inicio-header,
+.bloque {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,.25);
+  border-top: 5px solid #003366; /* franja azul institucional */
+  padding: 40px;
+  margin: 60px auto;
+  max-width: 750px;
+  text-align: center;
+}
+/* =========================
+   EFECTO DINÁMICO EN CUADROS
+========================= */
+
+section:hover,
+.inicio-header:hover,
+.bloque:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
