@@ -43,8 +43,8 @@ header h1 {
 
 /* Espaciado entre párrafos */
 section p {
-    margin-bottom: 15px;   /* separa cada párrafo */
-    line-height: 1.8;      /* mejora la lectura */
+    margin-bottom: 15px;
+    line-height: 1.8;
 }
 
 /* =========================
@@ -61,12 +61,17 @@ section {
     line-height: 1.6;
 }
 
+/* Títulos principales (como “Cursos”) */
 section h2 {
     color: #003366;
     font-size: 30px;
     margin-bottom: 25px;
+    text-transform: uppercase; /* convierte a mayúsculas */
+    text-align: center;        /* centra el texto */
+    letter-spacing: 1px;       /* mejora la estética */
 }
 
+/* Subtítulos */
 section h3 {
     color: #003366;
     font-size: 23px;
@@ -74,14 +79,19 @@ section h3 {
     margin-bottom: 12px;
 }
 
+/* Párrafos */
 section p {
     max-width: 650px;
-    margin-top: 16px;
-    margin-right: auto;
-    margin-bottom: 25px; /* espacio inferior real */
-    margin-left: auto;
+    margin: 16px auto 25px auto;
     font-size: 18px;
-    line-height: 1.8; /* mejora la lectura */
+    line-height: 1.8;
+}
+
+/* Mejora visual para la sección Información */
+section.informacion {
+    background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+    border-left: 6px solid #003366;
+    padding: 50px 40px;
 }
 
 /* =========================
