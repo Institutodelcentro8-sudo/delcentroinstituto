@@ -381,7 +381,10 @@ nav.abierto .cerrar-menu {
 
 main section,
 .inicio-header,
-.bloque {
+.bloque,
+.cursos-section,
+.certificados-section,
+.contacto-section {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0,0,0,.25);
@@ -391,13 +394,33 @@ main section,
   max-width: 750px;
   text-align: center;
 }
+
 /* =========================
    EFECTO DINÁMICO EN CUADROS
 ========================= */
 
 section:hover,
 .inicio-header:hover,
-.bloque:hover {
+.bloque:hover,
+.cursos-section:hover,
+.certificados-section:hover,
+.contacto-section:hover {
   transform: scale(1.02);
   transition: transform 0.3s ease;
+}
+
+/* =========================
+   TÍTULOS INTERNOS EN AZUL
+========================= */
+
+.cursos-section h2,
+.certificados-section h2,
+.contacto-section h2 {
+  color: #003366;
+  font-size: 28px;
+  font-weight: bold;
+  border-bottom: 2px solid #003366;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
 }
