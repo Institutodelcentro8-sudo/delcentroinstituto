@@ -9,7 +9,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: url("fondo-aula.jpg.") center/cover no-repeat fixed;
+    background: url("fondo-aula.jpg") center/cover no-repeat fixed;
     color: #222;
 }
 
@@ -48,14 +48,78 @@ header img {
     margin: auto;
 }
 
-header h1 {
-    color: #003366;
-    font-size: 34px;
+/* =========================
+   ENCABEZADO PRINCIPAL
+========================= */
+
+.inicio-header {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,.25);
+    text-align: center;
+    max-width: 750px;
+    margin: 80px auto 60px auto;
+    border-top: 5px solid #003366;
 }
 
-section p {
-    margin-bottom: 15px;
-    line-height: 1.8;
+.inicio-header img {
+    width: 170px;
+}
+
+header h1 {
+    color: #003366;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 20px;
+    color: #003366;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.texto-inicio {
+    font-size: 18px;
+    color: #222;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.botones-inicio {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* =========================
+   BOTONES GENERALES
+========================= */
+
+.btn-azul,
+.btn-verde {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 15px auto;
+    transition: .3s;
+}
+
+.btn-azul {
+    background: #003366;
+}
+
+.btn-verde {
+    background: #25D366;
+}
+
+.btn-verde:hover {
+    background: #128C7E;
+    transform: scale(1.05);
 }
 
 /* =========================
@@ -63,42 +127,41 @@ section p {
 ========================= */
 
 section {
-    background: rgba(255, 255, 255, 0.9); /* fondo blanco semitransparente */
-    padding: 45px;
-    border-radius: 14px;
-    box-shadow: 0 0 12px rgba(0,0,0,.12);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,.15);
     margin-bottom: 40px;
     text-align: center;
-    line-height: 1.6;
 }
 
 section h2 {
     color: #003366;
-    font-size: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: 2px solid #003366;
+    display: inline-block;
+    padding-bottom: 5px;
     margin-bottom: 25px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 1px;
-}
-
-section h3 {
-    color: #003366;
-    font-size: 23px;
-    margin-top: 30px;
-    margin-bottom: 12px;
 }
 
 section p {
-    max-width: 650px;
-    margin: 16px auto 25px auto;
     font-size: 18px;
+    color: #333;
     line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 25px auto;
 }
 
-section.informacion {
-    background: rgba(255, 255, 255, 0.9);
-    border-left: 6px solid #003366;
-    padding: 50px 40px;
+/* =========================
+   FRASE FINAL INSTITUCIONAL
+========================= */
+
+section:last-of-type p {
+    font-style: italic;
+    font-size: 20px;
+    color: #003366;
+    font-weight: 500;
 }
 
 /* =========================
@@ -108,7 +171,7 @@ section.informacion {
 nav {
     position: fixed;
     top: 0;
-    right: -250px; /* oculto por defecto */
+    right: -250px;
     width: 250px;
     height: 100%;
     background: #003366;
@@ -120,7 +183,7 @@ nav {
 }
 
 nav.abierto {
-    right: 0; /* visible cuando se abre */
+    right: 0;
 }
 
 nav h2 {
@@ -143,7 +206,6 @@ nav a:hover {
     background: #25D366;
 }
 
-/* Botón de cierre dentro del menú */
 .cerrar-menu {
     position: absolute;
     top: 15px;
@@ -179,35 +241,6 @@ nav.abierto .cerrar-menu {
 }
 
 /* =========================
-   BOTONES GENERALES
-========================= */
-
-.btn-azul,
-.btn-verde {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    padding: 12px 22px;
-    border-radius: 8px;
-    font-weight: bold;
-    margin: 15px auto;
-    transition: .3s;
-}
-
-.btn-azul {
-    background: #003366;
-}
-
-.btn-verde {
-    background: #25D366;
-}
-
-.btn-verde:hover {
-    background: #128C7E;
-    transform: scale(1.05);
-}
-
-/* =========================
    WHATSAPP
 ========================= */
 
@@ -228,89 +261,6 @@ nav.abierto .cerrar-menu {
 .whatsapp:hover {
     background: #128C7E;
     transform: scale(1.05);
-}
-
-/* =========================
-   CURSOS
-========================= */
-
-.cursos-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.curso-card {
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    transition: .3s;
-}
-
-.curso-card:hover {
-    transform: scale(1.05);
-}
-
-.curso-card h3 a {
-    color: #003366;
-    text-decoration: none;
-}
-
-.curso-card h3 a:hover {
-    color: #25D366;
-}
-
-/* =========================
-   INICIO
-========================= */
-
-.inicio-header {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0,0,0,.2);
-    text-align: center;
-    max-width: 700px;
-    margin: 60px auto;
-}
-
-.inicio-header img {
-    width: 170px;
-}
-
-.texto-inicio {
-    font-size: 17px;
-    color: #333;
-    line-height: 1.5;
-}
-
-.botones-inicio {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.cards-inicio {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card-inicio {
-    background: rgba(255, 255, 255, 0.9);
-    width: 230px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
-    text-align: center;
-}
-
-.card-inicio h3 {
-    color: #003366;
 }
 
 /* =========================
@@ -338,10 +288,6 @@ nav.abierto .cerrar-menu {
 
     section h2 {
         font-size: 25px;
-    }
-
-    section h3 {
-        font-size: 21px;
     }
 
     section p {
@@ -375,10 +321,5 @@ nav.abierto .cerrar-menu {
     .btn-verde {
         width: 80%;
         font-size: 18px;
-    }
-
-    .portada img {
-        width: 100%;
-        height: auto;
     }
 }
