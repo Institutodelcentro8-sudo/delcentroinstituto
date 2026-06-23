@@ -323,3 +323,55 @@ nav.abierto .cerrar-menu {
         font-size: 18px;
     }
 }
+/* =========================
+   BLOQUES INSTITUCIONALES
+========================= */
+
+/* Contenedor para Misión y Valores */
+.bloques-institucionales {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* Cada bloque individual */
+.bloque {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,.15);
+  padding: 25px 30px;
+  width: 320px;
+  text-align: left;
+}
+
+.bloque h3 {
+  color: #003366;
+  font-size: 22px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 5px;
+}
+
+.bloque ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bloque ul li {
+  font-size: 17px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Frase final institucional */
+.frase-final {
+  font-style: italic;
+  font-size: 20px;
+  color: #003366;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 40px;
+}
