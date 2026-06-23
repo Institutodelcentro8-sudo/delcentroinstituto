@@ -8,9 +8,8 @@
 </head>
 <body>
 <button class="menu-btn" onclick="toggleMenu()">☰</button>
-<button class="cerrar-menu" onclick="toggleMenu()">✖</button>
+
 <main> 
-    
 <header class="inicio-header">
     <img src="logo.jpg.jpeg" alt="Logo del Instituto del Centro">
     <h1>Instituto del Centro</h1>
@@ -22,31 +21,26 @@
     </p>
 
     <div class="botones-inicio">
-        <a href="cursos.html" class="btn-azul">📚 Ver Cursos</a>
-        <a href="contacto.html" class="btn-verde">💬 Contactanos</a>
+        <a href="cursos.html" class="btn-azul">Ver Cursos</a>
+        <a href="contacto.html" class="btn-verde">Contactanos</a>
     </div>
 </header>
 
 <section>
     <h2>¿Por qué elegirnos?</h2>
-
     <div class="cards-inicio">
-
         <div class="card-inicio">
-            <h3>📜 Certificación</h3>
+            <h3>Certificación</h3>
             <p>Certificados con aval institucional.</p>
         </div>
-
         <div class="card-inicio">
-            <h3>💻 Modalidad Online</h3>
+            <h3>Modalidad Online</h3>
             <p>Estudiá desde cualquier lugar y a tu ritmo.</p>
         </div>
-
         <div class="card-inicio">
-            <h3>🤝 Acompañamiento</h3>
+            <h3>Acompañamiento</h3>
             <p>Seguimiento y asistencia durante toda la cursada.</p>
         </div>
-
     </div>
 </section>
 
@@ -56,16 +50,16 @@
         Compromiso, calidad educativa y acompañamiento personalizado para cada alumno.
     </p>
 </section>
-
 </main>
 
-<nav>
+<nav id="menu">
+    <button class="cerrar-menu" onclick="toggleMenu()">✖</button>
     <h2>Menú</h2>
-    <a href="informacion.html"> Información</a>
-    <a href="cursos.html"> Cursos</a>
-    <a href="certificados.html"> Certificados</a>
-    <a href="contacto.html"> Contacto</a>
-    <a href="trabajaconnostros.html"> Trabaja con nosotros</a>
+    <a href="informacion.html">Información</a>
+    <a href="cursos.html">Cursos</a>
+    <a href="certificados.html">Certificados</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="trabajaconnostros.html">Trabaja con nosotros</a>
 </nav>
 
 <a href="https://wa.me/5492284637002" class="whatsapp" target="_blank">
@@ -74,7 +68,7 @@
     
 <script>
 function toggleMenu() {
-    const nav = document.querySelector('nav');
+    const nav = document.getElementById('menu');
     nav.classList.toggle('abierto');
 }
 </script>
