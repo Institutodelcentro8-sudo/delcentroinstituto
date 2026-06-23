@@ -399,3 +399,19 @@ h2 {
         height: auto;
     }
 }
+.cerrar-menu {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* oculto por defecto */
+}
+
+/* Mostrar el botón solo cuando el menú esté abierto */
+.menu.abierto + .cerrar-menu {
+  display: block;
+}
