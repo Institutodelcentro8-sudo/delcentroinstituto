@@ -131,6 +131,24 @@ nav a:hover {
 }
 
 /* =========================
+   TÍTULOS PRINCIPALES
+========================= */
+
+h2 {
+    color: #003366;             /* azul institucional */
+    font-size: 30px;
+    text-transform: uppercase;  /* mayúsculas */
+    text-align: center;         /* centrado */
+    letter-spacing: 1px;        /* espacio entre letras */
+    margin-bottom: 25px;
+
+    background: #e6eef8;        /* fondo suave */
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+/* =========================
    BOTÓN MENÚ
 ========================= */
 
