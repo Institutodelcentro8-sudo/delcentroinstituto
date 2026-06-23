@@ -412,6 +412,21 @@ h2 {
 }
 
 /* Mostrar el botón solo cuando el menú esté abierto */
-.menu.abierto + .cerrar-menu {
+nav.abierto .cerrar-menu {
   display: block;
+}
+
+/* --- Movimiento del menú lateral --- */
+nav {
+  position: fixed;
+  top: 0;
+  right: -250px; /* oculto fuera de pantalla */
+  width: 250px;
+  height: 100%;
+  background: #003366;
+  transition: right 0.3s ease;
+}
+
+nav.abierto {
+  right: 0; /* visible cuando se abre */
 }
