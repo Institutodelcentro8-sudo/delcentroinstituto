@@ -1,449 +1,730 @@
-/* =========================
-   ESTILO GENERAL
-========================= */
+/* ==========================================
+   INSTITUTO DEL CENTRO
+   STYLE.CSS - VERSIÓN 2.0
+========================================== */
 
-* {
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: url("./fondo-aula.jpg.") center center / cover no-repeat fixed;
-    color: #222;
+html{
+    scroll-behavior:smooth;
 }
 
-/* Capa azul translúcida para mantener legibilidad */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(10, 30, 63, 0.55); /* azul institucional con transparencia */
-    z-index: -1;
+body{
+    font-family:'Poppins',sans-serif;
+    background:url("./fondo-aula.jpg.jpeg") center center/cover no-repeat fixed;
+    color:#222;
+    line-height:1.7;
 }
 
-/* =========================
+/* Capa azul sobre la imagen */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(10,30,63,.55);
+    z-index:-1;
+}
+
+/* ==========================================
    CONTENIDO
-========================= */
+========================================== */
 
-main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 30px;
-    margin-right: 260px;
+main{
+    max-width:950px;
+    margin:0 auto;
+    margin-right:270px;
+    padding:40px 30px;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 35px;
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+    text-align:center;
 }
 
-header img {
-    width: 170px;
-    max-width: 100%;
-    display: block;
-    margin: auto;
+header img{
+    width:170px;
+    max-width:100%;
+    display:block;
+    margin:auto;
 }
 
-/* =========================
-   ENCABEZADO PRINCIPAL
-========================= */
-
-.inicio-header {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0,0,0,.25);
-    text-align: center;
-    max-width: 750px;
-    margin: 80px auto 60px auto;
-    border-top: 5px solid #003366;
+header h1{
+    color:#003366;
+    font-size:38px;
+    margin-top:15px;
+    margin-bottom:10px;
+    font-weight:700;
 }
 
-.inicio-header img {
-    width: 170px;
+header p{
+    color:#003366;
+    font-size:20px;
+    font-weight:600;
 }
 
-header h1 {
-    color: #003366;
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.inicio-header{
+    background:rgba(255,255,255,.95);
+    border-radius:18px;
+    padding:45px;
+    box-shadow:0 10px 30px rgba(0,0,0,.20);
+    border-top:6px solid #003366;
+    margin:70px auto 50px;
 }
 
-header p {
-    font-size: 20px;
-    color: #003366;
-    font-weight: 600;
-    margin-top: 5px;
+.texto-inicio{
+    color:#333;
+    font-size:18px;
+    margin-top:20px;
+    line-height:1.8;
 }
 
-.texto-inicio {
-    font-size: 18px;
-    color: #222;
-    line-height: 1.6;
-    margin-top: 20px;
-}
+/* ==========================================
+   BOTONES
+========================================== */
 
-.botones-inicio {
-    margin-top: 20px;
-    text-align: center;
+.botones-inicio{
+    margin-top:30px;
 }
-
-/* =========================
-   BOTONES GENERALES
-========================= */
 
 .btn-azul,
-.btn-verde {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    padding: 12px 22px;
-    border-radius: 8px;
-    font-weight: bold;
-    margin: 15px auto;
-    transition: .3s;
+.btn-verde{
+
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    padding:14px 26px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+    margin:10px;
 }
 
-.btn-azul {
-    background: #003366;
+.btn-azul{
+
+    background:#003366;
 }
 
-.btn-verde {
-    background: #25D366;
+.btn-azul:hover{
+
+    background:#0054a6;
+    transform:translateY(-3px);
 }
 
-.btn-verde:hover {
-    background: #128C7E;
-    transform: scale(1.05);
+.btn-verde{
+
+    background:#25D366;
 }
 
-/* =========================
+.btn-verde:hover{
+
+    background:#128C7E;
+    transform:translateY(-3px);
+}
+
+/* ==========================================
    SECCIONES
-========================= */
+========================================== */
 
-section {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0,0,0,.15);
-    margin-bottom: 40px;
-    text-align: center;
+section{
+
+    background:rgba(255,255,255,.94);
+    border-radius:16px;
+    padding:40px;
+    margin:45px auto;
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+    border-top:6px solid #003366;
+    transition:.3s;
 }
 
-section h2 {
-    color: #003366;
-    font-size: 28px;
-    font-weight: bold;
-    border-bottom: 2px solid #003366;
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 25px;
+section:hover{
+
+    transform:translateY(-4px);
 }
 
-section p {
-    font-size: 18px;
-    color: #333;
-    line-height: 1.8;
-    max-width: 650px;
-    margin: 0 auto 25px auto;
+section h2{
+
+    color:#003366;
+    font-size:30px;
+    margin-bottom:25px;
+    display:inline-block;
+    border-bottom:3px solid #003366;
+    padding-bottom:5px;
 }
 
-/* =========================
-   FRASE FINAL INSTITUCIONAL
-========================= */
+section h3{
 
-section:last-of-type p {
-    font-style: italic;
-    font-size: 20px;
-    color: #003366;
-    font-weight: 500;
+    color:#003366;
+    margin-top:20px;
+    margin-bottom:10px;
 }
 
-/* =========================
-   MENÚ LATERAL
-========================= */
+section p{
 
-nav {
-    position: fixed;
-    top: 0;
-    right: -250px;
-    width: 250px;
-    height: 100%;
-    background: #003366;
-    transition: right 0.3s ease;
-    z-index: 1000;
-    padding: 25px 20px;
-    box-shadow: -2px 0 10px rgba(0,0,0,.2);
-    color: white;
+    font-size:18px;
+    color:#333;
+    margin-bottom:20px;
 }
 
-nav.abierto {
-    right: 0;
+section ul{
+
+    max-width:650px;
+    margin:25px auto;
+    text-align:left;
 }
 
-nav h2 {
-    text-align: center;
-    margin-bottom: 20px;
+section li{
+
+    margin-bottom:12px;
+    font-size:17px;
 }
 
-nav a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 11px;
-    margin: 8px 0;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: 0.3s;
+/* ==========================================
+   TARJETAS DEL INDEX
+========================================== */
+
+.cards-inicio{
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:30px;
 }
 
-nav a:hover {
-    background: #25D366;
+.card-inicio{
+
+    width:300px;
+    background:white;
+    border-radius:14px;
+    padding:28px;
+    box-shadow:0 5px 18px rgba(0,0,0,.15);
+    transition:.3s;
 }
 
-.cerrar-menu {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-    display: none;
+.card-inicio:hover{
+
+    transform:translateY(-6px);
 }
 
-nav.abierto .cerrar-menu {
-    display: block;
+.card-inicio h3{
+
+    color:#003366;
+    margin-bottom:15px;
 }
 
-/* =========================
-   BOTÓN MENÚ HAMBURGUESA
-========================= */
+.card-inicio p{
 
-.menu-btn {
-    display: block;
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    background: #003366;
-    color: white;
-    border: none;
-    font-size: 28px;
-    padding: 8px 12px;
-    border-radius: 6px;
-    z-index: 9999;
+    font-size:16px;
+    margin-bottom:20px;
 }
 
-/* =========================
+/* ==========================================
+   MENÚ
+========================================== */
+
+.menu-btn{
+
+    position:fixed;
+    top:18px;
+    right:18px;
+    z-index:9999;
+
+    background:#003366;
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:28px;
+
+    padding:8px 14px;
+
+    cursor:pointer;
+}
+
+nav{
+
+    position:fixed;
+
+    top:0;
+
+    right:-270px;
+
+    width:260px;
+
+    height:100%;
+
+    background:#003366;
+
+    transition:.35s;
+
+    padding:30px 20px;
+
+    z-index:999;
+
+    box-shadow:-3px 0 20px rgba(0,0,0,.30);
+}
+
+nav.abierto{
+
+    right:0;
+}
+
+nav h2{
+
+    color:white;
+
+    text-align:center;
+
+    margin-bottom:25px;
+}
+
+nav a{
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px;
+
+    margin-bottom:10px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+    font-weight:600;
+}
+
+nav a:hover{
+
+    background:#25D366;
+}
+
+.cerrar-menu{
+
+    position:absolute;
+
+    top:15px;
+
+    right:18px;
+
+    color:white;
+
+    background:none;
+
+    border:none;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    display:none;
+}
+
+nav.abierto .cerrar-menu{
+
+    display:block;
+}
+
+/* ==========================================
    WHATSAPP
-========================= */
+========================================== */
 
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    background: #25D366;
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px;
-    border-radius: 50px;
-    font-weight: bold;
-    box-shadow: 0 0 10px rgba(0,0,0,.3);
-    transition: .3s;
+.whatsapp{
+
+    position:fixed;
+
+    bottom:22px;
+
+    left:22px;
+
+    background:#25D366;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px 20px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+
+    transition:.3s;
 }
 
-.whatsapp:hover {
-    background: #128C7E;
-    transform: scale(1.05);
+.whatsapp:hover{
+
+    background:#128C7E;
+
+    transform:scale(1.05);
 }
-
-/* =========================
-   CELULAR Y TABLET
-========================= */
-
-@media (max-width: 768px) {
-    main {
-        max-width: 100%;
-        margin: 0;
-        padding: 20px;
-    }
-
-    header img {
-        width: 120px;
-    }
-
-    header h1 {
-        font-size: 28px;
-    }
-
-    section {
-        padding: 25px 18px;
-    }
-
-    section h2 {
-        font-size: 25px;
-    }
-
-    section p {
-        font-size: 17px;
-    }
-
-    .menu-btn {
-        font-size: 26px;
-        padding: 6px 10px;
-    }
-
-    nav {
-        right: -300px;
-        width: 260px;
-    }
-
-    nav.abierto {
-        right: 0;
-    }
-
-    .cerrar-menu {
-        font-size: 22px;
-    }
-
-    .whatsapp {
-        bottom: 15px;
-        left: 15px;
-        padding: 12px 16px;
-    }
-
-    .btn-verde {
-        width: 80%;
-        font-size: 18px;
-    }
-}
-/* =========================
+/* ==========================================
    BLOQUES INSTITUCIONALES
-========================= */
+========================================== */
 
-/* Contenedor para Misión y Valores */
-.bloques-institucionales {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 40px;
+.bloques-institucionales{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    margin-top:40px;
 }
 
-/* Cada bloque individual */
-.bloque {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,.15);
-  padding: 25px 30px;
-  width: 320px;
-  text-align: left;
+.bloque{
+
+    background:rgba(255,255,255,.95);
+
+    width:330px;
+
+    border-radius:16px;
+
+    padding:30px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.18);
+
+    border-top:6px solid #003366;
+
+    transition:.3s;
 }
 
-.bloque h3 {
-  color: #003366;
-  font-size: 22px;
-  margin-bottom: 10px;
-  border-bottom: 2px solid #003366;
-  padding-bottom: 5px;
+.bloque:hover{
+
+    transform:translateY(-6px);
 }
 
-.bloque ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.bloque h3{
+
+    color:#003366;
+
+    margin-bottom:15px;
+
+    border-bottom:2px solid #003366;
+
+    padding-bottom:8px;
 }
 
-.bloque ul li {
-  font-size: 17px;
-  color: #333;
-  margin-bottom: 8px;
+.bloque p{
+
+    color:#333;
+
+    font-size:17px;
 }
 
-/* Frase final institucional */
-.frase-final {
-  font-style: italic;
-  font-size: 20px;
-  color: #003366;
-  font-weight: 500;
-  text-align: center;
-  margin-top: 40px;
-}
-/* =========================
-   CUADROS UNIFICADOS CON FRANJA AZUL
-========================= */
+.bloque ul{
 
-main section,
-.inicio-header,
-.bloque,
-.cursos-section,
-.certificados-section,
-.contacto-section {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0,0,0,.25);
-  border-top: 5px solid #003366; /* franja azul institucional */
-  padding: 40px;
-  margin: 60px auto;
-  max-width: 750px;
-  text-align: center;
+    list-style:none;
+
+    padding-left:0;
 }
 
-/* =========================
-   EFECTO DINÁMICO EN CUADROS
-========================= */
+.bloque li{
 
-section:hover,
-.inicio-header:hover,
-.bloque:hover,
-.cursos-section:hover,
-.certificados-section:hover,
-.contacto-section:hover {
-  transform: scale(1.02);
-  transition: transform 0.3s ease;
+    margin-bottom:10px;
+
+    color:#333;
 }
 
-/* =========================
-   TÍTULOS INTERNOS EN AZUL
-========================= */
+/* ==========================================
+   FRASE FINAL
+========================================== */
 
-.cursos-section h2,
-.certificados-section h2,
-.contacto-section h2 {
-  color: #003366;
-  font-size: 28px;
-  font-weight: bold;
-  border-bottom: 2px solid #003366;
-  display: inline-block;
-  padding-bottom: 5px;
-  margin-bottom: 25px;
+.frase-final{
+
+    color:white;
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-style:italic;
+
+    font-weight:500;
+
+    margin:50px 0;
 }
-/* =========================
-   CUADROS INDIVIDUALES PARA CURSOS, CERTIFICADOS Y CONTACTO
-========================= */
+
+/* ==========================================
+   TARJETAS DE CURSOS
+========================================== */
 
 .curso-card,
 .certificado-card,
-.contacto-card {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0,0,0,.25);
-  border-top: 5px solid #003366;
-  padding: 25px 30px;
-  margin: 25px auto;
-  max-width: 750px;
-  text-align: center;
-  transition: transform 0.3s ease;
+.contacto-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    margin:25px auto;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    border-top:5px solid #003366;
+
+    transition:.3s;
 }
 
 .curso-card:hover,
 .certificado-card:hover,
-.contacto-card:hover {
-  transform: scale(1.02);
+.contacto-card:hover{
+
+    transform:translateY(-6px);
+}
+
+.curso-card h3,
+.certificado-card h3,
+.contacto-card h3{
+
+    margin-bottom:15px;
+}
+
+.curso-card a,
+.certificado-card a,
+.contacto-card a{
+
+    color:#003366;
+
+    text-decoration:none;
+
+    font-weight:700;
+}
+
+.curso-card a:hover,
+.certificado-card a:hover,
+.contacto-card a:hover{
+
+    color:#0054a6;
+}
+
+/* ==========================================
+   IMÁGENES DE CURSOS
+========================================== */
+
+.imagen-curso{
+
+    width:100%;
+
+    max-width:420px;
+
+    display:block;
+
+    margin:30px auto;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 22px rgba(0,0,0,.25);
+
+    transition:.3s;
+}
+
+.imagen-curso:hover{
+
+    transform:scale(1.02);
+}
+
+/* ==========================================
+   TABLAS (POR SI LAS AGREGÁS)
+========================================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:25px;
+}
+
+table th{
+
+    background:#003366;
+
+    color:white;
+
+    padding:12px;
+}
+
+table td{
+
+    background:white;
+
+    padding:12px;
+
+    border:1px solid #ddd;
+}
+
+/* ==========================================
+   FOOTER (PARA FUTURAS ACTUALIZACIONES)
+========================================== */
+
+footer{
+
+    text-align:center;
+
+    color:white;
+
+    padding:30px;
+
+    font-size:15px;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:900px){
+
+main{
+
+margin:0;
+
+padding:20px;
+
+}
+
+.bloques-institucionales{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.bloque{
+
+width:100%;
+
+max-width:600px;
+
+}
+
+.cards-inicio{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.card-inicio{
+
+width:100%;
+
+max-width:420px;
+
+}
+
+.curso-card,
+.certificado-card,
+.contacto-card{
+
+width:100%;
+
+}
+
+header h1{
+
+font-size:30px;
+
+}
+
+section h2{
+
+font-size:26px;
+
+}
+
+header img{
+
+width:130px;
+
+}
+
+.menu-btn{
+
+font-size:25px;
+
+}
+
+.whatsapp{
+
+left:15px;
+
+bottom:15px;
+
+padding:12px 16px;
+
+}
+
+.btn-azul,
+.btn-verde{
+
+display:block;
+
+width:100%;
+
+max-width:320px;
+
+margin:15px auto;
+
+text-align:center;
+
+}
+
+}
+
+/* ==========================================
+   ANIMACIONES
+========================================== */
+
+@keyframes aparecer{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+section,
+.inicio-header,
+.bloque,
+.card-inicio,
+.curso-card,
+.certificado-card{
+
+animation:aparecer .8s ease;
 }
