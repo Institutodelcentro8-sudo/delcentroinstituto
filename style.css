@@ -13,17 +13,16 @@ body::before{content:"";position:fixed;inset:0;background:rgba(10,30,63,.55);z-i
 
 main{max-width:950px;margin:0 auto;padding:40px 30px;}
 
-/* HEADER */
+/* HERO INICIO */
 .inicio-header{
-  background:rgba(255,255,255,.95);border-radius:18px;padding:45px;
-  box-shadow:0 10px 30px rgba(0,0,0,.20);border-top:6px solid #003366;
-  margin:70px auto 50px;text-align:center;position:relative;
+  background:linear-gradient(rgba(0,51,102,0.85),rgba(0,51,102,0.85)),
+             url("./fondo-aula.jpg.jpeg") center/cover no-repeat;
+  border-radius:0;padding:80px 30px;text-align:center;color:white;
 }
-.logo-menu{display:flex;justify-content:space-between;align-items:center;}
-.logo-menu img{width:150px;}
-header h1{color:#003366;font-size:38px;margin:15px 0 10px;font-weight:700;}
-header p{color:#003366;font-size:20px;font-weight:600;}
-.texto-inicio{color:#333;font-size:18px;margin-top:20px;line-height:1.8;}
+.inicio-header img{width:180px;margin-bottom:20px;}
+.inicio-header h1{font-size:48px;font-weight:700;text-shadow:2px 2px 6px rgba(0,0,0,0.4);}
+.inicio-header p{font-size:22px;font-weight:500;margin-bottom:20px;color:#f0f0f0;}
+.texto-inicio{background:rgba(255,255,255,0.1);padding:20px;border-radius:12px;font-size:18px;line-height:1.8;color:#f9f9f9;}
 
 /* MENÚ SUPERIOR */
 .menu-btn{background:#003366;color:white;border:none;border-radius:8px;font-size:26px;padding:8px 14px;cursor:pointer;}
@@ -39,12 +38,11 @@ nav a:hover{background:#25D366;color:white;}
 
 /* BOTONES */
 .botones-inicio{margin-top:30px;}
-.btn-azul,.btn-verde{display:inline-block;text-decoration:none;color:white;padding:14px 26px;border-radius:8px;font-weight:600;transition:.3s;margin:10px;}
+.btn-azul,.btn-verde{display:inline-block;text-decoration:none;color:white;padding:16px 32px;border-radius:10px;font-weight:600;transition:.3s;margin:10px;font-size:18px;}
 .btn-azul{background:#003366;}
 .btn-azul:hover{background:#0054a6;transform:translateY(-3px);}
 .btn-verde{background:#25D366;}
 .btn-verde:hover{background:#128C7E;transform:translateY(-3px);}
 
 /* SECCIONES */
-section{background:rgba(255,255,255,.94);border-radius:16px;padding:40px;margin:45px auto;box-shadow:0 8px 25px rgba(0,0,0,.15);border-top:6px solid #003366;transition:.3s;}
-section:hover{transform:translate
+section{background:rgba(255,255,255,.94);border-radius:16px;padding:40px;margin:45px auto;box-shadow:0 8px 25px rgba(0,0,0,.15);border-top
