@@ -586,3 +586,38 @@ section,
         right:0;
     }
 }
+@media(max-width:900px){
+
+    html,
+    body{
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden !important;
+    }
+
+    main{
+        width:100% !important;
+        max-width:100% !important;
+        margin-left:0 !important;
+        margin-right:0 !important;
+        padding-left:15px !important;
+        padding-right:15px !important;
+    }
+
+    .inicio-header,
+    section,
+    .cards-inicio,
+    .card-inicio,
+    .bloques-institucionales,
+    .bloque{
+        width:100% !important;
+        max-width:100% !important;
+        margin-left:auto !important;
+        margin-right:auto !important;
+    }
+
+    .cards-inicio{
+        display:flex !important;
+        flex-direction:column !important;
+    }
+}
