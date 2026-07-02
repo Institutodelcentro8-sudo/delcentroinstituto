@@ -575,3 +575,14 @@ section,
 .certificado-card{
     animation:aparecer .8s ease;
 }
+@media(max-width:900px){
+    nav{
+        width:80%;
+        max-width:280px;
+        right:-100%;
+    }
+
+    nav.abierto{
+        right:0;
+    }
+}
