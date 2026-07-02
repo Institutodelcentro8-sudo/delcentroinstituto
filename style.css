@@ -602,3 +602,14 @@ section,
 .certificado-card{
     animation:aparecer .8s ease;
 }
+/* CORRECCIÓN LOGO EN PÁGINAS INTERNAS */
+
+body:not(.inicio) header img{
+    width:70px !important;
+    max-width:70px !important;
+}
+
+.inicio-header img{
+    width:120px !important;
+    max-width:120px !important;
+}
